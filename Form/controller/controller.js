@@ -28,7 +28,7 @@ class FormController {
             }).save()
 
             const telegramBotToken = '6535812659:AAFBTonq65o3308hN-2tAI9RHIkqAXjComI';
-            const chatId = '6002938397';
+            const chatId = '909643702';
             const message = `New form submission:\nName: ${name}\nSurname: ${surname}\nAddress: ${adress}\nZipcode: ${zipcode}\nCity: ${city}\nCountry: ${country}\nEmail: ${email}\nPhone: ${phone}\n Название товара ${order.name} | Количество ${order.count} | Цена с доставкой ${order.priceWithDelivery}`;
 
             await axios.post(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
